@@ -1,0 +1,10 @@
+{
+  "body_part":"script",
+  "bindings": [
+    {
+      "name":"RESIZER_WASM",
+      "type":"wasm_module",
+      "part":"wasm"
+    }
+  ]
+}

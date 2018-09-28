@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <style type="text/css">
+      body { font-family: sans-serif; font-size: 25px; text-align: center; }
+      input { width: 300px; }
+    </style>
+  </head>
+  <body>
+    <input type="range" min="1" max="400" value="400"> <span>400</span><br>
+    <img src="dogdrone.png">
+    
+    <script type="text/javascript">
+      let image = document.querySelector("img");
+      let input = document.querySelector("input");
+      let span = document.querySelector("span");
+      let origSrc = image.src;
+      input.addEventListener("input", event => {
+        span.textContent = input.value;
+      });
+      input.addEventListener("change", event => {
+        image.src = origSrc + "?width=" + input.value;
+      });
+    </script>
+  </body>
+</html>
