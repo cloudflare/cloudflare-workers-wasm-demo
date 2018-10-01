@@ -8,7 +8,7 @@ avoid the need for a C standard library. A more practical approach to building W
 would be to use [Emscripten](http://emscripten.org) to provide a working library. However, as of
 this writing, Emscripten still needs some tweaks to correctly target Cloudflare Workers.
 
-In order to minimize dependencies, we implement image encoding, deconding, and resizing using the
+In order to minimize dependencies, we implement image encoding, decoding, and resizing using the
 [stb library](https://github.com/nothings/stb).
 
 ## What's in this repository
