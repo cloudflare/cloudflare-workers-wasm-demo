@@ -24,11 +24,8 @@ In order to minimize dependencies, we implement image encoding, decoding, and re
 
 ## How to build
 
-1. Install Clang.
-2. [Build lld from source](https://lld.llvm.org/getting_started.html) in order to get the `wasm-ld`
-   tool. You may need to pass these flags on the `cmake` command line:
-   `-DLLVM_EXPERIMENTAL_TARGETS_TO_BUILD=WebAssembly -DLLVM_TARGETS_TO_BUILD=WebAssembly`
-3. `make`
+1. Install Clang >= 8.0.0
+2. `make`
 
 ## How to deploy
 
