@@ -9,7 +9,7 @@ NO_STANDARD_LIBS=-nostdlib -nostdinc -isystemstubs
 # - Don't expect a main() function.
 # - Have the module import a WebAssembly.Memory to use, rather than create its
 #   own. This gives us more control over memory limits from the JS side.
-WASM_LINKER_FLAGS=-Wl,--no-entry -Wl,--import-memory
+WASM_LINKER_FLAGS=-Wl,--no-entry -Wl,--import-memory -Wl,--export-dynamic
 
 resizer.wasm: main.c bootstrap.h
 	clang $(CFLAGS) --target=wasm32-unknown-unknown-wasm \
