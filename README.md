@@ -1,3 +1,11 @@
+**WARNING:** This was a demo hastily prepared for the initial release of WebAssembly on Workers.
+This code is not designed to be production-quality, and tooling hav improved considerably since
+this code was written. We do NOT recommend using this code as a template for your own applications;
+it may be useful for educational purposes. For the latest best practices on using Wasm on Workers,
+see [documentation on building Rust-Wasm workers with Wrangler](https://workers.cloudflare.com/docs/tutorials/build-a-rustwasm-function/).
+If you're looking for image resizing specifically, consider using
+[Cloudflare Image Resizing](https://developers.cloudflare.com/images/about/).
+
 # Cloudflare Workers WebAssembly Demo
 
 This repository implements image resizing that runs on Cloudflare's edge network using
